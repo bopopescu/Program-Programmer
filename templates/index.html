@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program Programmer Interface</title>
+        <!--<link rel="icon" href="http://example.com/favicon.png">-->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css" !important>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">// <![CDATA[
+            function loading(){
+                $("#loading").show();
+                $("#content").hide();       
+            }
+            // ]]></script>
+    </head>
+
+    <body>
+        <div id="loading">
+            <div class = "title">
+                <h1>Loading</h1>
+            </div>
+            <div class = "image">
+                <img src="../static/img/loading.gif" alt="Loading" style="width:10%;height:10%;">
+            </div>
+        </div>
+
+        <div id="content">
+            <div class = "title">
+                <h1>Program Generator</h1>
+            </div>
+
+            <div class = "container">
+                <div class="inner-container">
+                <form class="form" role="form" method='POST' action='/'>
+                    <div class="form-group">
+                        <label for="IO"> Paste the designated Input/Outputs in the text box below. Use a line for each I/O pair, and separate the input and output with a comma.</label>
+                        <div id="holder">
+                            <textarea class="form-control" rows="10" name="IO"<!--placeholder="Formatting Example:&#10;0, 0&NewLine;1, 1&NewLine;2, 2&NewLine;etc..."-->></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success" onclick="loading();">Create</button>
+
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+            <p>Created by Michael Benimovich, Lester Fan
+                <br>Uncommon Hacks 2018</p>
+        </div>   
+    </body>
+</html>

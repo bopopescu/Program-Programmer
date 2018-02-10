@@ -1,0 +1,63 @@
+body { 
+    background: greysmoke !important; 
+}
+
+#bottom, #push { 
+    height:30px;
+}
+
+.title{
+    margin-top: 2%;
+}
+
+.container {
+    text-align: center;
+    margin-top: 2%;
+}
+
+h1, button, select, option {
+    text-align: center;
+    font-family: "Helvetica", cursive, sans-serif;
+}
+.inner-container {
+    width: 66%;
+    margin: 0 auto;
+}
+input {
+    
+    height: 50%;
+    padding: 5% 0%;
+}
+
+#holder {
+    
+    padding: 1%;
+}
+
+label {
+    
+    max-width: 66%;
+}
+
+label, p {
+    font-family: "Helvetica", cursive, sans-serif;
+}
+
+div#loading {
+    display: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+p{
+  font-family: "Helvetica", cursive, sans-serif;
+}
+
+
+html{ 
+    height: 100%; 
+}
+
