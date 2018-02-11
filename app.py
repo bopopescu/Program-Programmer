@@ -22,7 +22,7 @@ def index():
 
     # If request is posted
     if request.method == 'POST':
-        # Take in the three inputs
+        # Take in the input
         data=request.form['IO']
         return collect(data)
 
